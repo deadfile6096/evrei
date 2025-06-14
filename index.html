@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORION Project</title>
+    <link rel="icon" type="image/png" href="favicon/favicon.png">
+    <!-- Подключение Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: {
+                        '2k': '2560px',
+                        '4k': '3840px',
+                    },
+                    colors: {
+                        'crimson-custom': '#DC143C'
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adaptive.css">
+    <link rel="stylesheet" href="tailwind-custom.css">
+</head>
+<body>
+    <div class="video-container relative h-screen w-full overflow-x-hidden">
+        <div class="stepped-text absolute top-[30px] left-[30px] z-10 w-4/5 2k:top-[50px] 2k:left-[50px] 4k:top-[60px] 4k:left-[60px]">
+            <span class="2k:text-[3.2rem] 4k:text-[4rem]">ORION</span>
+            <span class="2k:text-[3.2rem] 4k:text-[4rem] 2k:ml-[60px] 4k:ml-[80px]">Project:</span>
+            <span class="2k:text-[3.2rem] 4k:text-[4rem] 2k:ml-[120px] 4k:ml-[160px]">Board</span>
+            <span class="2k:text-[3.2rem] 4k:text-[4rem] 2k:ml-[180px] 4k:ml-[240px]">Archive</span>
+            <a href="https://x.com/bloodline_faith" target="_blank" class="block mt-4 2k:mt-6 4k:mt-8 w-12 h-12 2k:w-20 2k:h-20 4k:w-28 4k:h-28 rounded-full overflow-hidden transition-all duration-300 hover:scale-110 border-2 2k:border-[3px] 4k:border-4 border-crimson-custom p-0.5 4k:p-1">
+                <div class="w-full h-full rounded-full overflow-hidden">
+                    <img src="img/twitter.png" alt="Twitter" class="w-full h-full object-cover">
+                </div>
+            </a>
+        </div>
+        <img src="img/country.png" alt="Country emblem" class="top-right-image absolute top-[-30px] right-[-50px] z-10 w-[20%] 2k:w-[18%] 4k:w-[15%]">
+        <img src="img/jews.png" alt="Symbol" class="bottom-left-image absolute bottom-0 left-[30px] z-0 w-[25%] 2k:w-[22%] 4k:w-[20%]">
+        <img src="img/fingerprint.png" alt="Fingerprint" class="bottom-right-image absolute bottom-0 right-[30px] z-0 w-[25%] 2k:w-[22%] 4k:w-[20%]">
+        <video autoplay loop muted class="background-video absolute top-0 left-0 w-full h-full object-cover z-[-1]">
+            <source src="img/background-1.webm" type="video/webm">
+        </video>
+        <div class="content relative z-1 text-white text-center p-[20px] h-full flex flex-col justify-center items-center">
+            <h1 class="text-3xl mb-5 shadow-md 2k:text-4xl 4k:text-5xl"></h1>
+            <div class="image-section flex flex-col items-center justify-center relative w-full" style="top: -10vh;">
+                <div class="masson-image-container relative inline-block w-[180px] h-[180px] mb-[20px] 2k:w-[220px] 2k:h-[220px] 4k:w-[260px] 4k:h-[260px]">
+                    <div class="rays"></div>
+                    <img src="img/masson.webp" alt="Masonic symbol" class="masson-image w-full h-full object-contain relative z-[2]">
+                    <!-- Создаем 12 лучей вокруг изображения -->
+                    <div class="ray absolute top-1/2 left-1/2 w-[2px] h-[120%] bg-gradient-to-t from-transparent via-crimson-custom/40 to-transparent origin-bottom-center" style="transform: rotate(0deg)"></div>
+                    <div class="ray absolute top-1/2 left-1/2 w-[2px] h-[120%] bg-gradient-to-t from-transparent via-crimson-custom/40 to-transparent origin-bottom-center" style="transform: rotate(30deg)"></div>
+                    <div class="ray absolute top-1/2 left-1/2 w-[2px] h-[120%] bg-gradient-to-t from-transparent via-crimson-custom/40 to-transparent origin-bottom-center" style="transform: rotate(60deg)"></div>
+                    <div class="ray absolute top-1/2 left-1/2 w-[2px] h-[120%] bg-gradient-to-t from-transparent via-crimson-custom/40 to-transparent origin-bottom-center" style="transform: rotate(90deg)"></div>
+                    <div class="ray absolute top-1/2 left-1/2 w-[2px] h-[120%] bg-gradient-to-t from-transparent via-crimson-custom/40 to-transparent origin-bottom-center" style="transform: rotate(120deg)"></div>
+                    <div class="ray absolute top-1/2 left-1/2 w-[2px] h-[120%] bg-gradient-to-t from-transparent via-crimson-custom/40 to-transparent origin-bottom-center" style="transform: rotate(150deg)"></div>
+                    <div class="ray absolute top-1/2 left-1/2 w-[2px] h-[120%] bg-gradient-to-t from-transparent via-crimson-custom/40 to-transparent origin-bottom-center" style="transform: rotate(180deg)"></div>
+                    <div class="ray absolute top-1/2 left-1/2 w-[2px] h-[120%] bg-gradient-to-t from-transparent via-crimson-custom/40 to-transparent origin-bottom-center" style="transform: rotate(210deg)"></div>
+                    <div class="ray absolute top-1/2 left-1/2 w-[2px] h-[120%] bg-gradient-to-t from-transparent via-crimson-custom/40 to-transparent origin-bottom-center" style="transform: rotate(240deg)"></div>
+                    <div class="ray absolute top-1/2 left-1/2 w-[2px] h-[120%] bg-gradient-to-t from-transparent via-crimson-custom/40 to-transparent origin-bottom-center" style="transform: rotate(270deg)"></div>
+                    <div class="ray absolute top-1/2 left-1/2 w-[2px] h-[120%] bg-gradient-to-t from-transparent via-crimson-custom/40 to-transparent origin-bottom-center" style="transform: rotate(300deg)"></div>
+                    <div class="ray absolute top-1/2 left-1/2 w-[2px] h-[120%] bg-gradient-to-t from-transparent via-crimson-custom/40 to-transparent origin-bottom-center" style="transform: rotate(330deg)"></div>
+                </div>
+                <div class="orion-title text-crimson-custom text-[5rem] mb-[20px] drop-shadow-lg tracking-widest 2k:text-[6.5rem] 4k:text-[8rem]">ORION Project</div>
+                <div class="center-image flex justify-center items-center my-[10px] w-[15%] 2k:w-[20%] 4k:w-[25%]">
+                    <img src="img/lolo.gif" alt="lolo animation" class="lolo-animation max-w-[80%] max-h-[60vh] rounded-[10px] shadow-lg shadow-red-500/50 animate-pulse">
+                </div>
+                <div class="image-caption text-[2.4rem] text-[#f1f1f1] mt-[20px] drop-shadow-lg max-w-[80%] text-center leading-normal 2k:text-[3rem] 4k:text-[4.3rem] 2k:max-w-[70%] 4k:max-w-[60%]">
+                    An independent investigation into the influence of global structures on humanity.
+                </div>
+            </div>
+            <!-- Здесь будет контент сайта -->
+        </div>
+    </div>
+
+    <!-- Второй блок -->
+    <div class="section-2 relative min-h-screen w-full bg-black overflow-x-hidden">
+        <div class="absolute inset-0">
+            <video autoplay loop muted class="w-full h-full object-cover opacity-50">
+                <source src="img/background-2.webm" type="video/webm">
+            </video>
+        </div>
+        
+        <div class="relative z-10 min-h-screen flex flex-col items-center justify-center p-8">
+            <!-- Текст в центре -->
+            <div class="absolute top-[45%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 text-center z-20 max-w-4xl 2k:max-w-6xl 4k:max-w-7xl">
+                <p class="text-white text-5xl 2k:text-6xl 4k:text-8xl leading-relaxed font-['Chilling_Nightime'] mb-8">
+                    Their faces appear again and again - in government, on magazine covers, in the shadows behind global conflicts.
+                </p>
+                <p class="text-white text-5xl 2k:text-6xl 4k:text-8xl leading-relaxed font-['Chilling_Nightime'] mb-6">
+                    But no one speaks their names. Because names are power.
+                </p>
+                <p class="text-white text-5xl 2k:text-6xl 4k:text-8xl leading-relaxed font-['Chilling_Nightime']">
+                    And they have long ago given themselves a new one.
+                </p>
+            </div>
+            
+            <!-- Картинка fire - левый верх -->
+            <div class="question-container absolute top-[10%] left-[15%] 2k:scale-150 4k:scale-200 2k:origin-top-left 4k:origin-top-left">
+                <img src="img/fire.png" alt="fire" class="question-hover w-[200px] h-auto opacity-80 2k:w-[280px] 4k:w-[350px] animate-pulse">
+                <div class="question-mark 2k:scale-150 4k:scale-200" style="top: -30px; left: 20px;">?</div>
+                <div class="question-mark 2k:scale-150 4k:scale-200" style="top: -10px; right: -20px;">?</div>
+                <div class="question-mark 2k:scale-150 4k:scale-200" style="bottom: -25px; left: -15px;">?</div>
+            </div>
+            
+            <!-- Картинка book1 - правый верх -->
+            <div class="question-container absolute top-[20%] right-[10%] 2k:scale-150 4k:scale-200 2k:origin-top-right 4k:origin-top-right">
+                <img src="img/book1.jpg" alt="book1" class="question-hover w-[180px] h-auto opacity-70 2k:w-[250px] 4k:w-[320px] transform rotate-12">
+                <div class="question-mark 2k:scale-150 4k:scale-200" style="top: -35px; right: 15px;">?</div>
+                <div class="question-mark 2k:scale-150 4k:scale-200" style="bottom: -20px; right: -25px;">?</div>
+                <div class="question-mark 2k:scale-150 4k:scale-200" style="top: 10px; left: -30px;">?</div>
+                <div class="question-mark 2k:scale-150 4k:scale-200" style="bottom: 5px; left: 10px;">?</div>
+            </div>
+            
+            <!-- Картинка book2 - левый низ -->
+            <div class="question-container absolute bottom-[15%] left-[20%] 2k:scale-150 4k:scale-200 2k:origin-bottom-left 4k:origin-bottom-left">
+                <img src="img/book2.jpg" alt="book2" class="question-hover w-[160px] h-auto opacity-75 2k:w-[220px] 4k:w-[280px] transform -rotate-6">
+                <div class="question-mark 2k:scale-150 4k:scale-200" style="top: -25px; left: 30px;">?</div>
+                <div class="question-mark 2k:scale-150 4k:scale-200" style="bottom: -30px; right: 20px;">?</div>
+                <div class="question-mark 2k:scale-150 4k:scale-200" style="top: 15px; right: -20px;">?</div>
+            </div>
+            
+            <!-- Дополнительные копии для заполнения пространства -->
+            <div class="question-container absolute bottom-[25%] right-[25%] 2k:scale-150 4k:scale-200 2k:origin-bottom-right 4k:origin-bottom-right">
+                <img src="img/fire.png" alt="fire" class="question-hover w-[150px] h-auto opacity-60 2k:w-[200px] 4k:w-[260px] transform rotate-45">
+                <div class="question-mark 2k:scale-150 4k:scale-200" style="top: -20px; left: -10px;">?</div>
+                <div class="question-mark 2k:scale-150 4k:scale-200" style="bottom: -15px; right: -15px;">?</div>
+            </div>
+            
+            <!-- Новые картинки -->
+            <div class="question-container absolute top-[30%] left-[40%] 2k:scale-150 4k:scale-200 2k:origin-center 4k:origin-center">
+                <img src="img/orig.webp" alt="orig" class="question-hover w-[170px] h-auto opacity-75 2k:w-[240px] 4k:w-[300px] transform rotate-3">
+                <div class="question-mark 2k:scale-150 4k:scale-200" style="top: -30px; left: 50px;">?</div>
+                <div class="question-mark 2k:scale-150 4k:scale-200" style="bottom: -25px; left: -20px;">?</div>
+                <div class="question-mark 2k:scale-150 4k:scale-200" style="top: 20px; right: -25px;">?</div>
+                <div class="question-mark 2k:scale-150 4k:scale-200" style="bottom: 10px; right: 30px;">?</div>
+            </div>
+            
+            <div class="question-container absolute bottom-[35%] left-[8%] 2k:scale-150 4k:scale-200 2k:origin-bottom-left 4k:origin-bottom-left">
+                <img src="img/book3.jpg" alt="book3" class="question-hover w-[140px] h-auto opacity-65 2k:w-[190px] 4k:w-[250px] transform -rotate-15">
+                <div class="question-mark 2k:scale-150 4k:scale-200" style="top: -20px; right: 10px;">?</div>
+                <div class="question-mark 2k:scale-150 4k:scale-200" style="bottom: -30px; left: 20px;">?</div>
+                <div class="question-mark 2k:scale-150 4k:scale-200" style="top: 30px; left: -25px;">?</div>
+            </div>
+            
+            <div class="question-container absolute top-[60%] right-[15%] 2k:scale-150 4k:scale-200 2k:origin-top-right 4k:origin-top-right">
+                <img src="img/book4.webp" alt="book4" class="question-hover w-[160px] h-auto opacity-70 2k:w-[220px] 4k:w-[280px] transform rotate-20">
+                <div class="question-mark 2k:scale-150 4k:scale-200" style="top: -25px; left: -15px;">?</div>
+                <div class="question-mark 2k:scale-150 4k:scale-200" style="bottom: -20px; right: 25px;">?</div>
+                <div class="question-mark 2k:scale-150 4k:scale-200" style="top: 40px; right: -30px;">?</div>
+                <div class="question-mark 2k:scale-150 4k:scale-200" style="bottom: 15px; left: 15px;">?</div>
+            </div>
+            
+            <div class="question-container absolute bottom-[10%] left-[50%] 2k:scale-150 4k:scale-200 2k:origin-bottom 4k:origin-bottom">
+                <img src="img/photo.png" alt="photo" class="question-hover w-[260px] h-auto opacity-80 2k:w-[360px] 4k:w-[460px] transform -rotate-8">
+                <div class="question-mark 2k:scale-150 4k:scale-200" style="top: -35px; left: 15px;">?</div>
+                <div class="question-mark 2k:scale-150 4k:scale-200" style="bottom: -25px; right: 10px;">?</div>
+                <div class="question-mark 2k:scale-150 4k:scale-200" style="top: 5px; right: -25px;">?</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Третий блок -->
+    <div class="section-3 relative min-h-screen w-full bg-[#0a0a0a] overflow-hidden">
+        <div class="absolute inset-0 bg-[url('img/tab.jpg')] bg-cover bg-center opacity-10"></div>
+        
+        <div class="relative z-10 min-h-screen flex flex-col items-center justify-center p-8">
+            <div class="max-w-6xl 4k:max-w-[90%] mx-auto text-center px-4">
+                <h2 class="text-6xl 2k:text-8xl 4k:text-[10rem] font-['Shadow_of_the_Deads_Over'] text-crimson-custom mb-12 4k:mb-32 tracking-wider">
+                    The Hidden Pattern
+                </h2>
+                
+                <div class="relative inline-block mb-16 4k:mb-40 group">
+                    <img src="img/tab.jpg" alt="Classified" class="w-[120rem] max-w-full 4k:max-w-[120vw] 4k:max-h-[120vh] mx-auto rounded-xl 4k:rounded-3xl shadow-2xl 4k:shadow-4xl transform transition-transform duration-700 group-hover:scale-105 object-contain" style="filter: sepia(0.3) contrast(1.1) saturate(0.9);">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-12 4k:pb-24">
+                        <span class="text-white/80 text-lg 4k:text-4xl font-mono tracking-widest">CLASSIFIED // EYES ONLY</span>
+                    </div>
+                </div>
+                
+                <div class="text-3xl 2k:text-4xl 4k:text-7xl text-white/90 font-['Chilling_Nightime'] leading-relaxed max-w-5xl 4k:max-w-[80%] mx-auto">
+                    <p class="mb-8 4k:mb-20 4k:leading-[1.6]">
+                        This symbol appears where power shifts hands in shadows. Its presence marks the invisible threads that connect the elite across generations.
+                    </p>
+                    <p class="4k:leading-[1.6]">
+                        Those who recognize the pattern see the world for what it truly is—a stage where few pull the strings of many.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

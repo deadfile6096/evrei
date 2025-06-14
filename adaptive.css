@@ -1,0 +1,134 @@
+/* Адаптивные стили для разных типов мониторов */
+
+/* Базовые адаптивные единицы измерения */
+:root {
+  --base-font-size: 1rem;
+  --scale-factor: 1;
+}
+
+/* Ультраширокие мониторы (21:9 и шире) */
+@media (min-aspect-ratio: 21/9) {
+  :root {
+    --scale-factor: 1.2;
+  }
+  
+  .video-container {
+    max-width: 100%;
+    height: 100vh;
+  }
+  
+  .stepped-text span {
+    font-size: calc(2rem * var(--scale-factor));
+  }
+  
+  .stepped-text span:nth-child(2) {
+    margin-left: 60px;
+  }
+  
+  .stepped-text span:nth-child(3) {
+    margin-left: 120px;
+  }
+  
+  .stepped-text span:nth-child(4) {
+    margin-left: 180px;
+  }
+}
+
+/* 4K мониторы */
+@media (min-width: 2560px) and (max-width: 3839px) {
+  :root {
+    --scale-factor: 1.5;
+  }
+  
+  .stepped-text span {
+    font-size: calc(2rem * var(--scale-factor));
+  }
+}
+
+/* 4K и выше */
+@media (min-width: 3840px) {
+  :root {
+    --scale-factor: 2.5;
+  }
+  
+  .stepped-text {
+    top: 80px;
+    left: 80px;
+  }
+  
+  .stepped-text span {
+    font-size: calc(3rem * var(--scale-factor));
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+  }
+  
+  .orion-title {
+    font-size: 10rem !important;
+    margin-bottom: 3rem !important;
+  }
+  
+  .image-caption {
+    font-size: 5rem !important;
+    margin-top: 4rem !important;
+    max-width: 80% !important;
+  }
+  
+  .lolo-animation {
+    max-width: 30% !important;
+    margin: 2rem 0 !important;
+  }
+  
+  .masson-image-container {
+    width: 320px !important;
+    height: 320px !important;
+    margin-bottom: 3rem !important;
+  }
+  
+  .ray {
+    height: 150% !important;
+  }
+}
+
+/* 2K мониторы */
+@media (min-width: 2560px) and (max-width: 3839px) {
+  :root {
+    --scale-factor: 1.25;
+  }
+  
+  .stepped-text span {
+    font-size: calc(2rem * var(--scale-factor));
+  }
+}
+
+/* Нестандартные мониторы с соотношением 16:10 */
+@media (aspect-ratio: 16/10) {
+  .video-container {
+    height: 100vh;
+  }
+  
+  .stepped-text {
+    width: 70%;
+  }
+}
+
+/* Адаптация для видео */
+@media screen and (min-width: 1200px) {
+  .background-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Использование viewport единиц для адаптивности */
+.adaptive-element {
+  font-size: 3vw; /* 3% от ширины viewport */
+  margin: 2vh 0; /* 2% от высоты viewport */
+  padding: 2vmin; /* 2% от минимального размера (высота или ширина) */
+}
+
+/* Предотвращение слишком больших размеров на очень больших экранах */
+@media (min-width: 3000px) {
+  .adaptive-element {
+    font-size: 90px; /* Максимальный размер шрифта */
+  }
+}
